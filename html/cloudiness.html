@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Web Visualization Dashboard (Latitude)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Latitude</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="temperature.html">Max Temperature</a></li>
+                                <li><a href="humidity.html">Humidity</a></li>
+                                <li><a href="cloudiness.html">Cloudiness</a></li>
+                                <li><a href="wind_speed.html">Wind Speed</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="comparison.html">Comparison</a></li>
+                        <li><a href="data.html">Data</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <!--  Second row to hold : Summary and Visulaization plots, in 2 columns-->
+            <div class = "row">
+                <!-- Summary Info -->
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Cloudiness</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="../Images/Fig3.png" class="img-clone-1 hidden-xs  img-responsive">
+                        </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><br>Looking at this chart there does not appear to be a significant correlation between the cities lattitude and cloudiness. The data also shows that the southern hemisphere tends to be less cloudy, this time of year, than the northern hemisphere. This may be due to the tilt of the earth at the time the data was collected.<br></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!--Visualization Data -->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Visualizations</h1>
+                        </div>
+                    </div>
+                    <div class ="row">
+                        <div class="col-sm-6">
+                            <div class="panel-body">
+                                <img src="../Images/Fig1.png" class = "img-responsive"alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="panel-body">
+                                <img src="../Images/Fig2.png" class = "img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="row">
+                        <div class="col-sm-6">
+                            <div class="panel-body" id="border_img">
+                                <img src="../Images/Fig3.png" class = "img-responsive" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="panel-body">
+                                <img src="../Images/Fig4.png" class = "img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
